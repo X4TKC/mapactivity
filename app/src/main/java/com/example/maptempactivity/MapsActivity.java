@@ -43,6 +43,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
+
         LatLng sydney = new LatLng(-34, 151);
         LatLng paris = new LatLng(48.864716, 2.349014);
         LatLng toronto = new LatLng(43.6532,-79.3832);
@@ -50,7 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng stockholm = new LatLng(59.308152, 18.031316);
         LatLng brasilia = new LatLng(-15.801513, -47.880897);
         LatLng tokyo = new LatLng(35.753507, 139.223119);
-
+        mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.image_2));
         mMap.addMarker(new MarkerOptions().position(paris).title("Marker in Paris")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.image_3));
         mMap.addMarker(new MarkerOptions().position(toronto).title("Marker in Toronto")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.image_4));
